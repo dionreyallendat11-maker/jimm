@@ -5,12 +5,13 @@ body {
   background: #000000;
   display: flex;
   flex-direction: column; 
-  min-height: 100vh;      
+  min-height: 100vh;   
+  border-bottom: #fff solid 5px;   
 }
 .headerko {
   text-align: center;
   text-transform: uppercase;
-  padding: 32px;
+  padding: 20px;
   background-color: #0a0a23;
   color: #fff;
   border-bottom: 4px solid #fdb347;
@@ -21,19 +22,27 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 20px;
 
 }
 
 .box {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     height: auto;
 
 }
 .box img {
-  height: 30vh;
-  width: 50vh;
+  height: auto;
+  width: auto;
+  max-width: 90%;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
 
 }
 
